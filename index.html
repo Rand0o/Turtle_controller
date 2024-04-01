@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turtle Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Turtle Control</h1>
+
+    <select id="turtleSelector" onchange="selectTurtle()">
+        <!-- Options will be populated dynamically using JavaScript -->
+    </select>
+
+    <h2>Direction: <span id="direction">Unknown</span></h2>
+    <h2>Fuel Level: <span id="fuelLevel">0</span></h2>
+
+    <div id="inventory">
+        <!-- Inventory slots will be populated dynamically using JavaScript -->
+    </div>
+
+    <textarea id="customCode" placeholder="Enter custom code"></textarea>
+    <button onclick="sendCustomCode()">Run Custom Code</button>
+
+    <div id="inventory">
+        <div class="inventorySlot"></div>
+        <div class="inventorySlot"></div>
+        <div class="inventorySlot"></div>
+        <div class="inventorySlot"></div>
+        <div class="inventorySlot"></div>
+        <div class="inventorySlot"></div>
+        <div class="inventorySlot"></div>
+        <div class="inventorySlot"></div>
+        <div class="inventorySlot"></div>
+        <div class="inventorySlot"></div>
+        <div class="inventorySlot"></div>
+        <div class="inventorySlot"></div>
+        <div class="inventorySlot"></div>
+        <div class="inventorySlot"></div>
+        <div class="inventorySlot"></div>
+        <div class="inventorySlot"></div>
+    </div>
+
+    <canvas id="threeCanvas"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
